@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 
 function Home() {
   const addQuote = () => {
-    console.log('ADD');
+    console.log('Drawer');
   };
   return (
     <View style={styles.container}>

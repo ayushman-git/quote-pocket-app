@@ -18,6 +18,10 @@ function NavigationContainer() {
         </Stack.Group>
         <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
+      {/* <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Screen name="Home" component={Login} />
+        <Drawer.Screen name="Notifications" component={Login} />
+      </Drawer.Navigator> */}
     </Container>
   );
 }
