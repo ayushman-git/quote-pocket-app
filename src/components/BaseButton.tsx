@@ -3,6 +3,7 @@ import { Text, Pressable, StyleSheet } from 'react-native';
 
 interface IProps {
   text: string;
+  onPress: () => void;
 }
 
 const styles = StyleSheet.create({
@@ -20,9 +21,9 @@ const styles = StyleSheet.create({
   },
 });
 
-function BaseButton({ text }: IProps): ReactElement {
+function BaseButton({ text, onPress }: IProps): ReactElement {
   return (
-    <Pressable style={styles.button}>
+    <Pressable style={styles.button} onPress={onPress}>
       <Text style={styles.text}>{text}</Text>
     </Pressable>
   );
