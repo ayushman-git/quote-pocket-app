@@ -2,7 +2,6 @@ import * as React from 'react';
 import { NavigationContainer as Container } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-// eslint-disable-next-line import/no-unresolved
 import { Login } from '@/screens';
 
 const Stack = createNativeStackNavigator();
