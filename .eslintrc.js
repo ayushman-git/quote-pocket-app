@@ -23,6 +23,7 @@ module.exports = {
     },
   },
   rules: {
+    'object-curly-newline': 'off',
     'import/no-unresolved': [0, { caseSensitive: false }],
     'prettier/prettier': 0,
     'linebreak-style': 0,

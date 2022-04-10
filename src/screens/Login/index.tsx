@@ -2,6 +2,8 @@ import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import BaseButton from '@/components/BaseButton';
 
+const einstein = require('../../assets/images/einstein.png');
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -22,7 +24,7 @@ const styles = StyleSheet.create({
 function Login() {
   return (
     <View style={styles.container}>
-      <Image source={require('../../assets/images/einstein.png')} />
+      <Image source={einstein} />
       <Text style={styles.title}>Quote Pocket</Text>
       <Text style={styles.quote}>“Books were my pass to personal freedom”</Text>
       <BaseButton text="GET STARTED" />
