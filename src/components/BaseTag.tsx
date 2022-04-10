@@ -6,7 +6,7 @@ interface IProps {
   onPress: () => void;
 }
 
-function BaseTags({ text, onPress }: IProps): ReactElement {
+function BaseTag({ text, onPress }: IProps): ReactElement {
   return (
     <Pressable onPress={onPress}>
       <Text>#</Text>
@@ -15,4 +15,4 @@ function BaseTags({ text, onPress }: IProps): ReactElement {
   );
 }
 
-export default BaseTags;
+export default BaseTag;
