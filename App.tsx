@@ -3,9 +3,8 @@ import { SafeAreaView } from 'react-native';
 import NavigationContainer from './src/navigation';
 
 function App() {
-  console.log('TEST');
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <NavigationContainer />
     </SafeAreaView>
   );
