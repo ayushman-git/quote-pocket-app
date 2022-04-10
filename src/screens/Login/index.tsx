@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import { navigateAndSimpleReset } from '@/navigation/utils';
-import BaseButton from '@/components/BaseButton';
+import { Button } from '@/components';
 
 const einstein = require('../../assets/images/einstein.png');
 
@@ -38,7 +38,7 @@ function Login() {
       <Text style={styles.title}>Quote Pocket</Text>
       <Text style={styles.quote}>“Books were my pass to personal freedom”</Text>
       <View style={styles.btnContainer}>
-        <BaseButton text="GET STARTED" onPress={login} />
+        <Button text="GET STARTED" onPress={login} />
       </View>
     </View>
   );

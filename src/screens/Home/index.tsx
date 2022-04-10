@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { FloatingActionButton } from '@/components';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,6 +11,9 @@ const styles = StyleSheet.create({
 });
 
 function Home() {
+  const addQuote = () => {
+    console.log('ADD');
+  };
   return (
     <View style={styles.container}>
       <Text>
@@ -17,6 +21,7 @@ function Home() {
         the slightest
       </Text>
       <Text>C.S. Lewis</Text>
+      <FloatingActionButton onPress={addQuote} />
     </View>
   );
 }
