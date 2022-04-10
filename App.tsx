@@ -3,6 +3,7 @@ import { SafeAreaView } from 'react-native';
 import NavigationContainer from './src/navigation';
 
 function App() {
+  console.log('TEST');
   return (
     <SafeAreaView>
       <NavigationContainer />
