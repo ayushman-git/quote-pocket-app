@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import BaseButton from '@/components/BaseButton';
 
 const einstein = require('../../assets/images/einstein.png');
@@ -28,8 +29,9 @@ const styles = StyleSheet.create({
 });
 
 function Login() {
+  const navigation = useNavigation();
   const login = () => {
-    console.log('LOGIN');
+    navigation.navigate('Home');
   };
   return (
     <View style={styles.container}>
